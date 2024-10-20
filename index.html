@@ -7,7 +7,7 @@
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=960 height=640 tabindex="-1" style="width: 960px; height: 640px; background: #231F20"></canvas>
-    <script src="Build/WheelSpinner2.loader.js"></script>
+    <script src="Build/WheelSpinner.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -25,9 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/WheelSpinner2.data",
-        frameworkUrl: "Build/WheelSpinner2.framework.js",
-        codeUrl: "Build/WheelSpinner2.wasm",
+        dataUrl: "Build/WheelSpinner.data",
+        frameworkUrl: "Build/WheelSpinner.framework.js",
+        codeUrl: "Build/WheelSpinner.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Wheel Spinner",
